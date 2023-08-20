@@ -1,0 +1,45 @@
+.body{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    margin: 0px;
+    padding: 5px 20px;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: large;
+}
+
+.valid{
+    border: 3px solid green;
+}
+
+.invalid{
+    border: 3px solid crimson;
+}
+input + p{
+    display: none;
+}
+input.invalid + p{
+    display: block;
+    color:crimson;
+}
+input.valid + p{
+    display: none;
+}
